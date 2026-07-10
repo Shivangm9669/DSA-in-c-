@@ -8,12 +8,11 @@ class Solution {
             while(j<n && nums[i] == nums[j]){
                 j++;
             }
-            i++;
             if(j<n){
-                nums[i]=nums[j];
+                nums[++i]=nums[j];
             }
         }
 
-        return i;
+        return i+1;
     }
 }
